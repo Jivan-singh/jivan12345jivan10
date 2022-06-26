@@ -1,0 +1,273 @@
+Q-1 Write a program to check whether a given number is positive or non positive.
+Ans = 
+     #include<stdio.h>
+     #include<conio.h>
+     int main()
+     {
+         int a;
+         printf("Enter a number:");
+         scanf("%d",&a);
+         if(a>0)
+            {
+               printf("Positive number");
+            }
+         else
+            {
+               printf("Non Positive"); 
+            }
+         getch();
+      }
+____________________________________________________________________________
+Q-2 Write a program to check whether a given number is divisible by 5 or not.
+Ans =
+      #include<stdio.h>
+      #include<conio.h>
+      int main()
+      {
+          int a;
+          printf("Enter a number:");
+          scanf("%d",&a);
+          if(a%5==0)
+             {
+                printf("Divisible");
+             }
+          else
+             {
+                printf("Not Divisible"); 
+             }
+          getch();
+       }
+____________________________________________________________________________
+Q-3 Write a program to check whether a given number is even or odd.
+Ans = 
+     #include<stdio.h>
+     #include<conio.h>
+     int main()
+     {
+         int a;
+         printf("Enter a number:");
+         scanf("%d",&a);
+         if(a%2==0)
+            printf("Even number");
+         else
+            printf("Odd number");
+         getch();
+     }
+___________________________________________________________________________
+Q-4 Write a program to check whether a given number is even or odd without using the modulus operator.
+Ans =
+     #include<stdio.h>
+    
+ #include<conio.h>
+   
+ 
+ int main()
+
+     {
+
+         int x;
+    
+     printf("Enter a number:");
+
+         scanf("%d",&x);
+    
+     if(x&2==2)
+         printf("Odd number");
+    
+     else
+         printf("Even number");
+         getch();
+    
+ }
+____________________________________________________________________________ Q-5 Write a program to check whether a given number is a three digit number or not.
+Ans = 
+      #include<stdio.h>
+     
+ #include<conio.h>
+
+      
+int main()
+      
+{
+
+          int a,i=1;
+      
+    printf("Enter three digit number:");
+      
+    scanf("%d",&a);   // a=876
+
+          while(a=a/10)    // a=0
+      
+    {
+       
+       if(a>0)         //8>0
+
+              i++;       //    3
+
+          }
+ 
+          if(i==3)
+ 
+          {
+       
+      printf("three digit number");
+
+          }
+
+          else
+
+          { 
+             printf("Not");
+          }
+      
+    getch();
+
+       }
+____________________________________________________________________________
+Q-6 Write a program to find greater between two numbers. Print one number if both numbers are the same.
+Ans = 
+     #include<stdio.h>
+
+     #include<conio.h>
+
+     
+int main()
+ 
+    {
+   
+         int a,b;
+     
+    printf("Enter two number:");
+    
+     scanf("%d%d",&a,&b);
+     
+    if(a>b)
+
+            printf("%d is greater number",a);
+
+         else
+ 
+            printf("%d is greater number",b);
+
+         getch();
+
+     
+}
+____________________________________________________________________________
+Q-7 Write a program which takes the cost price and selling price of a product from the user. Now calculate and print profit or loss percentage.
+Ans = 
+     #include<stdio.h>
+
+     #include<conio.h>
+
+
+     int main()
+
+     {
+
+         int sellingprice,costprice,pl;
+     
+    printf("Enter sellingprice:");
+     
+    scanf("%d",&sellingprice);
+
+         printf("\nEnter costprice:");
+  
+         scanf("%d",&costprice);
+
+         pl=sellingprice-costprice;
+
+         pl=100*pl/costprice;
+
+         if(pl>0)
+
+            printf("\nProfit is %d\%\%",pl);
+
+         else
+
+            printf("\nLoss is %d\%\%",pl);
+
+         getch();
+
+       }
+____________________________________________________________________________
+Q-8 Write a program to take marks of 5 subjects from the user. Assume marks are given out of 100 and passing marks is 33. Now display whether the candidate passed the examination or failed.
+Ans = 
+     #include<stdio.h>
+    
+ #include<conio.h>
+     
+
+int main()
+     
+{
+     
+    int math,science,computer,hindi,english;
+     
+    printf("Enter the math subject marks:");
+
+         scanf("%d",&math);
+     
+    printf("\nEnter the science subject marks:");
+     
+    scanf("\n%d",&science);
+     
+    printf("\nEnter the computer subject marks:");
+
+         scanf("\n%d",&computer);
+     
+    printf("\nEnter the hindi subject marks:");
+     
+    scanf("\n%d",&hindi);
+     
+    printf("\nEnter the english subject marks:");
+
+         scanf("\n%d",&english);
+
+         if(math>=33&&science>=33&&computer>=33&&hindi>=33&&english)
+     
+    {
+
+            printf("\nCandidatePassed");
+
+         }
+     
+    else
+         {
+   
+         printf("\nCandidateFailed");
+
+         getch();
+
+      }
+____________________________________________________________________________
+Q-9 Write a program to check whether a given alphabet is in uppercase or lowercase.
+Ans = 
+     #include<stdio.h>
+
+     #include<conio.h>
+   
+     
+int main()
+     
+{
+     
+    char x;
+
+         printf("Enter the character:");
+     
+    scanf("%c",&x); 
+    
+     if(x>='A'&&x<='Z')
+        
+    printf("Uppercase");
+     
+    else if(x>='a'&&x<='z')
+
+            printf("Lowercase");
+      getch();
+
+     }
+____________________________________________________________________________
+Q-10 A policy agent has to inform about the amount a client will get after maturity of the scheme. If the client comes in the age group 18 to 25 then the policy period is 30 years, if the client comes in the age group 25 to 40 then the policy period is 20 years and if the client comes in the age group 40 to 55 then the policy period is 10 years. Policy is not for other age groups. Clients can invest any amount lesser than or equal to 100000 but must be greater than or equal to 10000. Rate of return is 5% using simple interest. Write a program to take age and investment amount. Print the maturity amount a client will get.
+Ans =
